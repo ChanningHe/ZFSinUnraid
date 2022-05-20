@@ -297,4 +297,4 @@ zfs create testpool/vms
 
 本文参考****ZFS PLUGIN FOR UNRAID****：[https://forums.unraid.net/topic/41333-zfs-plugin-for-unraid/](https://forums.unraid.net/topic/41333-zfs-plugin-for-unraid/)
 
-@KaSyoen ©️所有，转载需要标注
+@ChanningHe 转载需要标注
