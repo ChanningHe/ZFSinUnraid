@@ -3,7 +3,7 @@
 如何无缝从TrueNAS CORE/SCALE 切换到Unraid
 
 原文是在Notion上写的，查看Notion可以有更好的观看体验
-https://miniature-ballcap-32c.notion.site/Unraid-ZFS-cfa3ca8dbab7426687eff601172a0535
+https://kasyoen.notion.site/Unraid-ZFS-cfa3ca8dbab7426687eff601172a0535
 
 # 前言（屁话）
 
