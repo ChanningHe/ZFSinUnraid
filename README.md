@@ -40,21 +40,21 @@ ZFS在数据安全性上有许多优势，很多照片视频对我都有很多�
 2. 成功安装后，上方会多出一个栏APPS
 3. 然后在 APPS →Language→简体中文语言包→点击Install （因为我这里已经安装，会显示为action）
     
-    ![Untitled](https://list.hiscloud.cc/d/SCALE2Unraid/Pic/Untitled%201.png)
+    ![Untitled](https://github.com/ChanningHe/ZFSinUnraid/blob/main/Pic/Untitled%201.png)
     
 4. 安装完语言包后，我们还需要设置为中文。
 5. 安装以下顺序就可以将语言设置为中文。
     
     SETTINGS → Display Settings → Language → 简体中文 → APPLY
     
-    ![Untitled](https://list.hiscloud.cc/d/SCALE2Unraid/Pic/Untitled%202.png)
+    ![Untitled](https://github.com/ChanningHe/ZFSinUnraid/blob/main/Pic/Untitled%202.png)
     
-    ![Untitled](https://list.hiscloud.cc/d/SCALE2Unraid/Pic/Untitled%203.png)
+    ![Untitled](https://github.com/ChanningHe/ZFSinUnraid/blob/main/Pic/Untitled%203.png)
     
 
 PS：设置完可以在这里快速切换中英文
 
-![Untitled](https://list.hiscloud.cc/d/SCALE2Unraid/Pic/Untitled%204.png)
+![Untitled](https://github.com/ChanningHe/ZFSinUnraid/blob/main/Pic/Untitled%204.png)
 
 ## 创建池
 
@@ -89,15 +89,15 @@ PS：设置完可以在这里快速切换中英文
 
 1. 首先你需要知道自己硬盘在系统的标签名，Unraid中，可用在 主界面→ 磁盘 → 下拉栏中，找到你硬盘对于的标签名（入土橙色框）（我这里只使用一个盘作为示例，实际你需要记录自己所需要阵列对应的所有盘。）
     
-    ![Untitled](https://list.hiscloud.cc/d/SCALE2Unraid/Pic/Untitled%205.png)
+    ![Untitled](https://github.com/ChanningHe/ZFSinUnraid/blob/main/Pic/Untitled%205.png)
     
 2. 在 应用 中搜索 ZFS 并安装如图对应的ZFS插件
     
-    ![Untitled](https://list.hiscloud.cc/d/SCALE2Unraid/Pic/Untitled%206.png)
+    ![Untitled](https://github.com/ChanningHe/ZFSinUnraid/blob/main/Pic/Untitled%206.png)
     
 3. 打开Unraid的命令行
     
-    ![Untitled](https://list.hiscloud.cc/d/SCALE2Unraid/Pic/Untitled%207.png)
+    ![Untitled](https://github.com/ChanningHe/ZFSinUnraid/blob/main/Pic/Untitled%207.png)
     
 4. 接下来我们就需要创建ZFS的池了
 在命令行中输入：
@@ -126,9 +126,9 @@ zpool status [池名字]
 查看池的具体状态
 可以看到池的健康度，以及有没有报错
     
-    ![Untitled](https://list.hiscloud.cc/d/SCALE2Unraid/Pic/Untitled%208.png)
+    ![Untitled](https://github.com/ChanningHe/ZFSinUnraid/blob/main/Pic/Untitled%208.png)
     
-    ![Untitled](https://list.hiscloud.cc/d/SCALE2Unraid/Pic/Untitled%209.png)
+    ![Untitled](https://github.com/ChanningHe/ZFSinUnraid/blob/main/Pic/Untitled%209.png)
     
 6. 
 
@@ -142,7 +142,7 @@ zpool status [池名字]
 **zpool import**
 可以看到已经查看到 **testpool** 储存池
     
-    ![684B1490-639C-4A85-825B-8D8C28CD9F64.jpeg](https://list.hiscloud.cc/d/SCALE2Unraid/Pic/684B1490-639C-4A85-825B-8D8C28CD9F64.jpeg)
+    ![684B1490-639C-4A85-825B-8D8C28CD9F64.jpeg](https://github.com/ChanningHe/ZFSinUnraid/blob/main/Pic/684B1490-639C-4A85-825B-8D8C28CD9F64.jpeg)
     
 2. 查找你需要的储存池后，就可以使用命令：
 **zpool import [池名字]**
@@ -150,7 +150,7 @@ zpool status [池名字]
 **zpool status** 
 查询池状态
     
-    ![94188769-F218-4E26-BFB1-AA166AEAD1CF.jpeg](https://list.hiscloud.cc/d/SCALE2Unraid/Pic/94188769-F218-4E26-BFB1-AA166AEAD1CF.jpeg)
+    ![94188769-F218-4E26-BFB1-AA166AEAD1CF.jpeg](https://github.com/ChanningHe/ZFSinUnraid/blob/main/Pic/94188769-F218-4E26-BFB1-AA166AEAD1CF.jpeg)
     
 3. 完成池导入
 
@@ -171,7 +171,7 @@ zfs create testpool/vms
 2. 使用下面命令可以查看ZFS池下面的所有数据集
 **zfs list**
     
-    ![756473BF-AA0A-45D7-90E6-A4F50AAF85C8.jpeg](https://list.hiscloud.cc/d/SCALE2Unraid/Pic/756473BF-AA0A-45D7-90E6-A4F50AAF85C8.jpeg)
+    ![756473BF-AA0A-45D7-90E6-A4F50AAF85C8.jpeg](https://github.com/ChanningHe/ZFSinUnraid/blob/main/Pic/756473BF-AA0A-45D7-90E6-A4F50AAF85C8.jpeg)
     
     就可以查看testpool下面的数据集的 
     名字(NAME) 占用(USED) 可用容量(AVAIL) 引用(REFER)  挂载点(MOUNTPOINT) 
@@ -182,9 +182,9 @@ zfs create testpool/vms
 /mnt/[池名字]/[数据集]/[文件夹名]
 注意这里的文件夹直接填，会自动创建，需要使用创建数据集的方式。
     
-    ![Untitled](https://list.hiscloud.cc/d/SCALE2Unraid/Pic/Untitled%2010.png)
+    ![Untitled](https://github.com/ChanningHe/ZFSinUnraid/blob/main/Pic/Untitled%2010.png)
     
-    ![Untitled](https://list.hiscloud.cc/d/SCALE2Unraid/Pic/Untitled%2011.png)
+    ![Untitled](https://github.com/ChanningHe/ZFSinUnraid/blob/main/Pic/Untitled%2011.png)
     
 
 1. 全部设置完成，点击 应用  。
@@ -192,7 +192,7 @@ zfs create testpool/vms
 3. 在 主界面 → 磁盘1 随便选择一块硬盘
 
     
-    ![C18DFC3E-8033-4B48-A749-780951ED88AF.jpeg](https://list.hiscloud.cc/d/SCALE2Unraid/Pic/C18DFC3E-8033-4B48-A749-780951ED88AF.jpeg)
+    ![C18DFC3E-8033-4B48-A749-780951ED88AF.jpeg](https://github.com/ChanningHe/ZFSinUnraid/blob/main/Pic/C18DFC3E-8033-4B48-A749-780951ED88AF.jpeg)
     
     点击 启动 即可打开 Docker && VM（虚拟机）功能
     
@@ -209,7 +209,7 @@ zfs create testpool/vms
 2. 添加 SMB 设置
 在 设置 → SMB → SMB额外 → Samba额外配置 中
     
-    ![F8315DFE-07F4-4DE8-93B6-A0F3C447A980.jpeg](https://list.hiscloud.cc/d/SCALE2Unraid/Pic/F8315DFE-07F4-4DE8-93B6-A0F3C447A980.jpeg)
+    ![F8315DFE-07F4-4DE8-93B6-A0F3C447A980.jpeg](https://github.com/ChanningHe/ZFSinUnraid/blob/main/Pic/F8315DFE-07F4-4DE8-93B6-A0F3C447A980.jpeg)
     
     添加
     
@@ -229,7 +229,7 @@ zfs create testpool/vms
     
     需要注意的是，如果设置SMB共享时，需要停止Unraid系统自带阵列，即此处的停止
     
-    ![1DCB475D-9D44-4D37-9EE3-3A36B3D8B87E.jpeg](https://list.hiscloud.cc/d/SCALE2Unraid/Pic/1DCB475D-9D44-4D37-9EE3-3A36B3D8B87E.jpeg)
+    ![1DCB475D-9D44-4D37-9EE3-3A36B3D8B87E.jpeg](https://github.com/ChanningHe/ZFSinUnraid/blob/main/Pic/1DCB475D-9D44-4D37-9EE3-3A36B3D8B87E.jpeg)
     
     完成设置后，需要重新启动阵列，就可以正常使用了。
     
@@ -263,7 +263,7 @@ zfs create testpool/vms
     
     这里推荐使用Unraid ZFS插件同作者的ZnapZend插件
     
-    ![498C52BE-25C5-498C-B7C5-EFEBEF409230.jpeg](https://list.hiscloud.cc/d/SCALE2Unraid/Pic/498C52BE-25C5-498C-B7C5-EFEBEF409230.jpeg)
+    ![498C52BE-25C5-498C-B7C5-EFEBEF409230.jpeg](https://github.com/ChanningHe/ZFSinUnraid/blob/main/Pic/498C52BE-25C5-498C-B7C5-EFEBEF409230.jpeg)
     
     可以在应用中直接安装
     
@@ -291,9 +291,9 @@ zfs create testpool/vms
     
     这是一个推荐的插件，可以在主菜单下面显示各个数据集的状态。
     
-    ![Untitled](https://list.hiscloud.cc/d/SCALE2Unraid/Pic/Untitled%2012.png)
+    ![Untitled](https://github.com/ChanningHe/ZFSinUnraid/blob/main/Pic/Untitled%2012.png)
     
-    ![Untitled](https://list.hiscloud.cc/d/SCALE2Unraid/Pic/Untitled%2013.png)
+    ![Untitled](https://github.com/ChanningHe/ZFSinUnraid/blob/main/Pic/Untitled%2013.png)
     
 
 > 教程到这里就结束了，对于大部分的家用来说，ZFS池的默认选项能满足90%需求，但是ZFS池选项还有很多可以调整，后面也会出一期ZFS命令行的教程，来讲一下使用命令行调整池以及数据集选项。
