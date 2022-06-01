@@ -25,7 +25,7 @@ ZFS在数据安全性上有许多优势，很多照片视频对我都有很多�
 
 ## 添加应用源 && 设置语言
 
-![Untitled](https://list.hiscloud.cc/d/SCALE2Unraid/Pic/Untitled.png)
+![Untitled](https://github.com/ChanningHe/ZFSinUnraid/blob/main/Pic/Untitled.png)
 
 1. 在图中的栏中输入下方的应用源后，点击 INSTALL，即可安装应用源。
     
